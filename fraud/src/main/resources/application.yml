@@ -1,13 +1,12 @@
 server:
-  port: 8080
-
+  port: 8081
 spring:
   application:
-    name: customer
+    name: fraud
   datasource:
     username:
     password:
-    url: jdbc:postgresql://localhost:5432/cloud_customer
+    url: jdbc:postgresql://localhost:5432/cloud_fraud
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -20,4 +19,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
-
